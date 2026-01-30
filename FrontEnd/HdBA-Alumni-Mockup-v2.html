@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HdBA-Alumni- und Förderverein e.V.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-mark">HdBA</div>
+                <div class="logo-text">Alumni- und Förderverein</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+                <li><a href="#" onclick="showPage('about')" id="nav-about">Über uns</a></li>
+                <li><a href="#" onclick="showPage('membership')" id="nav-membership">Mitglied werden</a></li>
+                <li><a href="#" onclick="showPage('events')" id="nav-events">Veranstaltungen</a></li>
+                <li><a href="#" onclick="showPage('news')" id="nav-news">News</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <div id="page-home" class="page active">
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-label parallax-word" data-delay="0">Willkommen beim Verein</span>
+                <h1>
+                    <span class="parallax-word" data-delay="1">HdBA-Alumni-</span>
+                    <span class="parallax-word" data-delay="2">und</span>
+                    <span class="parallax-word" data-delay="3">Förderverein</span>
+                    <span class="parallax-word" data-delay="4">e.V.</span>
+                </h1>
+                <p>
+                    <span class="parallax-word" data-delay="5">Verbindungen</span>
+                    <span class="parallax-word" data-delay="6">schaffen,</span>
+                    <span class="parallax-word" data-delay="7">die</span>
+                    <span class="parallax-word" data-delay="8">über</span>
+                    <span class="parallax-word" data-delay="9">die</span>
+                    <span class="parallax-word" data-delay="10">Studienzeit</span>
+                    <span class="parallax-word" data-delay="11">hinaus</span>
+                    <span class="parallax-word" data-delay="12">tragen.</span>
+                </p>
+                <div class="hero-buttons parallax-buttons">
+                    <a href="#" onclick="showPage('membership')" class="btn btn-white">Mitglied werden</a>
+                    <a href="#" onclick="showPage('about')" class="btn btn-ghost">Mehr erfahren</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Unsere Ziele</h2>
+                    <p>Gemeinsam setzen wir uns für Bildung, Vernetzung und die Förderung von Studierenden ein.</p>
+                </div>
+                
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <div class="goal-icon">🎓</div>
+                        <h3>Förderung von Studierenden</h3>
+                        <p>Unterstützung durch Stipendien und Projektförderung.</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">🤝</div>
+                        <h3>Alumni-Netzwerk</h3>
+                        <p>Aufbau eines aktiven Netzwerks für Absolventen.</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">📚</div>
+                        <h3>Wissenstransfer</h3>
+                        <p>Veranstaltungen für fachlichen Austausch.</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">🌟</div>
+                        <h3>Karriereentwicklung</h3>
+                        <p>Mentoring und Beratung für Mitglieder.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Alumnifeste 2025</h2>
+                    <p>Feiern Sie mit uns die Gemeinschaft unserer Alumni an beiden Standorten.</p>
+                </div>
+                
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-visual">🏛️</div>
+                        <div class="event-content">
+                            <span class="event-date">TBA</span>
+                            <h3>Alumnifest Mannheim</h3>
+                            <p>Networking, Vorträge und geselliges Beisammensein im Herzen der Metropolregion.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-visual">🏰</div>
+                        <div class="event-content">
+                            <span class="event-date">TBA</span>
+                            <h3>Alumnifest Schwerin</h3>
+                            <p>Ein Tag voller Erinnerungen und neuer Kontakte am Schweriner See.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <a href="#" onclick="showPage('events')" class="btn btn-outline">Alle Veranstaltungen →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="page-about" class="page">
+        <div class="page-header">
+            <h1>Über uns</h1>
+            <p>Lernen Sie den HdBA-Alumni- und Förderverein kennen</p>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Wer wir sind</h2>
+                    <p>Der HdBA-Alumni- und Förderverein e. V. wurde durch Menschen gegründet, die durch Studium, Lehre oder berufliche Aufgaben mit der Hochschule der Bundesagentur für Arbeit verbunden sind oder waren – und die diese gemeinsame Grundlage weiterdenken wollten.</p>
+                    <p>Was uns zusammengeführt hat, ist die Idee, Begegnungen, Wissen und Engagement rund um Arbeit, Beratung und Bildung langfristig zu stärken. Als eigenständiger, gemeinnütziger Verein sind wir organisatorisch unabhängig von der HdBA und der Bundesagentur für Arbeit.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Unser Leitbild</h2>
+                    <p>Wir glauben an die Kraft von Netzwerken und den Wert lebenslangen Lernens. Unsere Werte:</p>
+                    <ul>
+                        <li><strong>Gemeinschaft</strong> – Zusammenhalt zwischen Studierenden, Alumni und Hochschule</li>
+                        <li><strong>Engagement</strong> – Ehrenamtlicher Einsatz für Bildung und Förderung</li>
+                        <li><strong>Transparenz</strong> – Offenes und nachvollziehbares Handeln</li>
+                        <li><strong>Nachhaltigkeit</strong> – Langfristiges Denken und beständige Strukturen</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>Der Vorstand</h2>
+                    <p>Unser Verein wird von einem ehrenamtlich tätigen Vorstand geleitet.</p>
+                    
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="team-avatar">MN</div>
+                            <h4>Max Mustermann</h4>
+                            <p>1. Vorsitzender</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">ES</div>
+                            <h4>Erika Schmidt</h4>
+                            <p>2. Vorsitzende</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">TM</div>
+                            <h4>Thomas Müller</h4>
+                            <p>Schatzmeister</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">AF</div>
+                            <h4>Anna Fischer</h4>
+                            <p>Schriftführerin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Kontakt</h2>
+                    <p><strong>HdBA-Alumni- und Förderverein e.V.</strong><br>
+                    Beispielstraße 123, 68163 Mannheim</p>
+                    <p>E-Mail: info@hdba-auf.de<br>
+                    Telefon: +49 (0) 621 1234567</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- MEMBERSHIP -->
+    <div id="page-membership" class="page">
+        <div class="page-header">
+            <h1>Mitglied werden</h1>
+            <p>Werden Sie Teil unserer Gemeinschaft</p>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="content-block">
+                    <h2>Warum Mitglied werden?</h2>
+                    <p>Als Mitglied im HdBA-Alumni- und Förderverein e. V. unterstützt Du Projekte von Studierenden und Alumni der HdBA, stärkst Vernetzung über Jahrgänge und Standorte hinweg und hilfst mit, dass aus der Idee eines Alumni- und Fördervereins ein lebendiges, dauerhaftes Netzwerk wird.</p>
+                    <p>Mitglied werden können alle natürlichen und juristischen Personen, die die Ziele des Vereins unterstützen möchten – ganz gleich, ob Du an der HdBA studierst bzw. studiert hast, dort lehrst oder auf anderem Weg mit ihren Themen verbunden bist.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership-hero">
+            <div class="container">
+                <div class="membership-grid">
+                    <!-- Alumni Mitgliedschaft -->
+                    <div class="membership-card membership-card-highlight">
+                        <span class="membership-badge">Alumni</span>
+                        <h3>Alumni-Mitgliedschaft</h3>
+                        <p class="subtitle">Für Alumni mit Campus-Zugehörigkeit</p>
+
+                        <div class="membership-price">
+                            <span class="amount">30 €</span>
+                            <span class="period">pro Jahr</span>
+                        </div>
+
+                        <ul class="membership-features">
+                            <li>Zugang zum geschützten Mitgliederportal (in Zukunft)</li>
+                            <li>Teilnahme an allen Vereinsveranstaltungen</li>
+                            <li>Stimmrecht bei Mitgliederversammlungen</li>
+                            <li>Vernetzung mit Alumni aller Jahrgänge</li>
+                            <li>Campus-Zuordnung (Mannheim/Schwerin)</li>
+                            <li>Steuerlich absetzbar</li>
+                        </ul>
+
+                        <div class="membership-cta">
+                            <button id="join-membership-btn" class="btn btn-primary">
+                                Alumni werden
+                            </button>
+                            <div class="stripe-badge">
+                                <img src="assets/logo/Stripe_Logo,_revised_2016.svg" alt="Stripe" style="height: 20px;">
+                                Sichere Zahlung mit Stripe
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vereinsunterstützer -->
+                    <div class="membership-card membership-card-highlight">
+                        <span class="membership-badge">Vereinsunterstützer</span>
+                        <h3>Vereinsunterstützer</h3>
+                        <p class="subtitle">Unterstützen ohne Standortbindung</p>
+
+                        <div class="membership-price">
+                            <span class="amount">30 €</span>
+                            <span class="period">pro Jahr</span>
+                        </div>
+
+                        <ul class="membership-features">
+                            <li>Alle Vorteile der Alumni-Mitgliedschaft</li>
+                            <li>Keine Standortbindung erforderlich</li>
+                            <li>Keine Campus-Auswahl nötig</li>
+                            <li>Automatische Abbuchung zum 01. Januar</li>
+                            <li>Steuerlich absetzbar</li>
+                        </ul>
+
+                        <div class="membership-cta">
+                            <button id="join-supporter-btn" class="btn btn-primary">
+                                Vereinsunterstützer werden
+                            </button>
+                            <div class="stripe-badge">
+                                <img src="assets/logo/Stripe_Logo,_revised_2016.svg" alt="Stripe" style="height: 20px;">
+                                Sichere Zahlung mit Stripe
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h4>Sichere Zahlung</h4>
+                        <p>Die Zahlung erfolgt sicher über Stripe. Sie werden zu einer sicheren Zahlungsseite weitergeleitet.</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>Jahresbeitrag</h4>
+                        <p>Der Mitgliedsbeitrag beträgt 30€ pro Jahr und ist steuerlich absetzbar.</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>Fragen?</h4>
+                        <p>Bei Fragen zur Mitgliedschaft: mitgliedschaft@hdba-auf.de</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- EVENTS -->
+    <div id="page-events" class="page">
+        <div class="page-header">
+            <h1>Veranstaltungen</h1>
+            <p>Entdecken Sie unsere kommenden Events</p>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Alumnifeste 2025</h2>
+                </div>
+
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-visual">🏛️</div>
+                        <div class="event-content">
+                            <span class="event-date">TBA</span>
+                            <h3>Alumnifest Mannheim</h3>
+                            <p>Networking, Vorträge und geselliges Beisammensein in der Metropolregion Rhein-Neckar.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-visual">🏰</div>
+                        <div class="event-content">
+                            <span class="event-date">TBA</span>
+                            <h3>Alumnifest Schwerin</h3>
+                            <p>Ein Tag voller Erinnerungen und neuer Kontakte am Schweriner See.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 5rem;">
+                    <h2>Weitere Veranstaltungen</h2>
+                </div>
+
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-visual">💼</div>
+                        <div class="event-content">
+                            <span class="event-date">10. März 2025</span>
+                            <h3>Karriere-Workshop</h3>
+                            <p>Strategien für die berufliche Weiterentwicklung – exklusiv für Mitglieder.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-visual">🎤</div>
+                        <div class="event-content">
+                            <span class="event-date">18. April 2025</span>
+                            <h3>Gastvortrag: Zukunft der Arbeit</h3>
+                            <p>Experten diskutieren aktuelle Trends auf dem Arbeitsmarkt.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-visual">🤝</div>
+                        <div class="event-content">
+                            <span class="event-date">Monatlich</span>
+                            <h3>Online-Stammtisch</h3>
+                            <p>Regelmäßiger virtueller Austausch für alle Mitglieder.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-visual">📅</div>
+                        <div class="event-content">
+                            <span class="event-date">November 2025</span>
+                            <h3>Mitgliederversammlung</h3>
+                            <p>Die jährliche Versammlung zur Mitgestaltung des Vereins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- NEWS -->
+    <div id="page-news" class="page">
+        <div class="page-header">
+            <h1>News</h1>
+            <p>Aktuelle Nachrichten aus dem Verein</p>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-image">📰</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-tag">Verein</span>
+                                <span class="news-date">5. Dezember 2025</span>
+                            </div>
+                            <h3>Jahresrückblick 2025: Ein erfolgreiches Jahr</h3>
+                            <p>Wir blicken stolz auf zahlreiche erfolgreiche Projekte zurück.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">🎓</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-tag">Förderung</span>
+                                <span class="news-date">28. November 2025</span>
+                            </div>
+                            <h3>Neue Stipendien für das Wintersemester vergeben</h3>
+                            <p>Fünf weitere Studierende werden aus unserem Fördertopf unterstützt.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">🤝</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-tag">Netzwerk</span>
+                                <span class="news-date">15. November 2025</span>
+                            </div>
+                            <h3>Kooperation mit Berufsverbänden ausgebaut</h3>
+                            <p>Neue Partnerschaften für mehr Vorteile und Vernetzung.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">🏆</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-tag">Auszeichnung</span>
+                                <span class="news-date">1. November 2025</span>
+                            </div>
+                            <h3>Alumna des Jahres 2025 ausgezeichnet</h3>
+                            <p>Herzlichen Glückwunsch an Dr. Maria Schmidt!</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">📢</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-tag">Ankündigung</span>
+                                <span class="news-date">20. Oktober 2025</span>
+                            </div>
+                            <h3>Neues Mentoring-Programm startet im Januar</h3>
+                            <p>Erfahrene Alumni werden mit Studierenden zusammengebracht.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">💡</div>
+                        <div class="news-body">
+                            <div class="news-meta">
+                                <span class="news-tag">Innovation</span>
+                                <span class="news-date">5. Oktober 2025</span>
+                            </div>
+                            <h3>Launch des neuen Mitgliederportals</h3>
+                            <p>Komplett überarbeitetes Portal mit neuen Funktionen online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-mark" style="background: white; color: var(--gray-900);">HdBA</div>
+                    <div class="logo-text" style="color: white;">Alumni- und Förderverein</div>
+                </div>
+                <p>Verbindungen schaffen, die über die Studienzeit hinaus tragen. Wir fördern Studierende, vernetzen Alumni und stärken die Gemeinschaft.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('about')">Über uns</a></li>
+                    <li><a href="#" onclick="showPage('membership')">Mitglied werden</a></li>
+                    <li><a href="#" onclick="showPage('events')">Veranstaltungen</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Rechtliches</h4>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="alert('Impressum-Seite')">Impressum</a></li>
+                    <li><a href="#" onclick="alert('Datenschutz-Seite')">Datenschutz</a></li>
+                    <li><a href="#">Satzung</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Kontakt</h4>
+                <ul class="footer-links">
+                    <li>info@hdba-auf.de</li>
+                    <li>+49 (0) 621 1234567</li>
+                    <li style="margin-top: 0.5rem;">Beispielstraße 123<br>68163 Mannheim</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 HdBA-Alumni- und Förderverein e.V.</p>
+            <div class="footer-legal">
+                <a href="#" onclick="alert('Impressum-Seite')">Impressum</a>
+                <a href="#" onclick="alert('Datenschutz-Seite')">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ============================================
+        // PAGE NAVIGATION
+        // ============================================
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById('page-' + pageId).classList.add('active');
+
+            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+            const navLink = document.getElementById('nav-' + pageId);
+            if (navLink) navLink.classList.add('active');
+
+            window.scrollTo(0, 0);
+
+            // Re-trigger scroll animations for new page
+            initScrollAnimations();
+        }
+
+        // ============================================
+        // STRIPE PAYMENT LINKS
+        // ============================================
+        // Replace these placeholder URLs with your actual Stripe Payment Links
+        const ALUMNI_PAYMENT_LINK = 'https://buy.stripe.com/test_aFa28tdzF9tdbnz6mfbo402';
+        const SUPPORTER_PAYMENT_LINK = 'https://buy.stripe.com/test_4gMbJ38fl20LbnzbGzbo401';
+
+        document.getElementById("join-membership-btn").onclick = () => {
+            window.location.href = ALUMNI_PAYMENT_LINK;
+        };
+
+        document.getElementById("join-supporter-btn").onclick = () => {
+            window.location.href = SUPPORTER_PAYMENT_LINK;
+        };
+
+        // ============================================
+        // BUTTON GLOW EFFECT
+        // ============================================
+        function initButtonGlow() {
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    this.classList.add('glow-animate');
+                    setTimeout(() => {
+                        this.classList.remove('glow-animate');
+                    }, 600);
+                });
+            });
+        }
+
+        // ============================================
+        // SCROLL ANIMATIONS (IntersectionObserver)
+        // ============================================
+        function initScrollAnimations() {
+            // Elements to animate
+            const animatableElements = [
+                { selector: '.section-header', animation: 'fade-up' },
+                { selector: '.goal-card', animation: 'fade-up', stagger: true },
+                { selector: '.event-card', animation: 'fade-up', stagger: true },
+                { selector: '.news-card', animation: 'zoom-in', stagger: true },
+                { selector: '.content-block', animation: 'fade-up' },
+                { selector: '.info-box', animation: 'fade-up', stagger: true },
+                { selector: '.team-member', animation: 'fade-up', stagger: true },
+                { selector: '.membership-card', animation: 'zoom-in', stagger: true }
+            ];
+
+            // Add scroll-animate class to elements
+            animatableElements.forEach(config => {
+                document.querySelectorAll(config.selector).forEach((el, index) => {
+                    if (!el.classList.contains('scroll-animate')) {
+                        el.classList.add('scroll-animate', config.animation);
+                        if (config.stagger) {
+                            el.classList.add('delay-' + ((index % 4) + 1));
+                        }
+                    }
+                });
+            });
+
+            // Create IntersectionObserver
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.scroll-animate').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // ============================================
+        // PARALLAX TEXT REVEAL
+        // ============================================
+        function initParallaxTextReveal() {
+            const parallaxWords = document.querySelectorAll('.parallax-word');
+            const parallaxButtons = document.querySelector('.parallax-buttons');
+
+            // Check for reduced motion preference
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (prefersReducedMotion) {
+                // Show everything immediately
+                parallaxWords.forEach(word => word.classList.add('revealed'));
+                if (parallaxButtons) parallaxButtons.classList.add('revealed');
+                return;
+            }
+
+            // Staggered reveal animation
+            const baseDelay = 100;
+
+            parallaxWords.forEach((word) => {
+                const delay = parseInt(word.dataset.delay) || 0;
+                setTimeout(() => {
+                    word.classList.add('revealed');
+                }, baseDelay + (delay * 80));
+            });
+
+            // Reveal buttons after words
+            if (parallaxButtons) {
+                const totalWords = parallaxWords.length;
+                setTimeout(() => {
+                    parallaxButtons.classList.add('revealed');
+                }, baseDelay + (totalWords * 80) + 200);
+            }
+        }
+
+        // ============================================
+        // INITIALIZATION
+        // ============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize button glow effect
+            initButtonGlow();
+
+            // Initialize scroll animations
+            initScrollAnimations();
+
+            // Initialize parallax text reveal
+            initParallaxTextReveal();
+        });
+    </script>
+</body>
+</html>
